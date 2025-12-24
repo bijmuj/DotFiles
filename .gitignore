@@ -1,0 +1,19 @@
+# .gitignore
+
+*
+!.gitignore
+!.bashrc
+!.config/
+
+# hyrland
+!.config/hypr/
+!.config/hypr/*.*
+# alacritty
+!.config/alacritty/
+!.config/alacritty/*.*
+# waybar
+!.config/waybar/
+!.config/waybar/*.*
+# wofi
+!.config/wofi/
+!.config/wofi/*.*

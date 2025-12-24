@@ -1,0 +1,57 @@
+window {
+  font-family: 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0px;
+  background-color: #24273a;
+  border-radius: 15px;
+  border: 2px solid #8aadf4;
+  opacity: 0.9;
+}
+
+#input {
+  margin: 5px;
+  border: none;
+  border-radius: 15px;
+  font-weight: 700;
+  color: #cad3f5;
+  background-color: #181926;
+  opacity: 1;
+}
+
+#inner-box {
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+#outer-box {
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+#scroll {
+  margin: 0px;
+  border: none;
+}
+
+#text {
+  margin: 5px;
+  border: none;
+  color: @text;
+}
+
+#entry {
+  border: none;
+}
+
+#entry:focus {
+  border: none;
+}
+
+#entry:selected {
+  background-color: #5b6078;
+  border-radius: 15px;
+  border: none;
+}
