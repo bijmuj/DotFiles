@@ -19,8 +19,8 @@
         "pulseaudio",
         "cpu",
         "memory",
-        "power-profiles-daemon",
-        "backlight-slider"
+	"custom/gpu",
+        "power-profiles-daemon"
     ],
     "backlight/slider": {
       "min": 0,
@@ -96,7 +96,7 @@
                     }
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": "{usage}% {avg_frequency}GHz ",
         "tooltip": false
     },
     "memory": {
@@ -140,7 +140,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "easyeffects"
     },
     "custom/media": {
         "format": "{icon} {text}",
@@ -165,5 +165,12 @@
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
-    }
+    },
+	"custom/gpu":{
+		"format": "{} {icon}",
+  		"exec": "~/.config/waybar/scripts/gpuinfo.sh",
+  		"return-type": "json",
+  		"format-icons": "\uF6E2",
+  		"on-click": "alacritty -e nvtop",
+	}
 }

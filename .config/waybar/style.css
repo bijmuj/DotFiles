@@ -74,7 +74,7 @@ button:hover {
 }
 
 #pulseaudio {
-    background-color: @blue;
+    background-color: @lavender;
     color: @crust;
 }
 
@@ -120,6 +120,7 @@ button:hover {
 #battery,
 #cpu,
 #memory,
+#custom-gpu,
 #disk,
 #temperature,
 #backlight,
@@ -190,11 +191,16 @@ label:focus {
 }
 
 #cpu {
-    background-color: @mauve;
+    background-color: @blue;
     color: @crust;
 }
 
 #memory {
+    background-color: @mauve;
+    color: @crust;
+}
+
+#custom-gpu {
     background-color: @teal;
     color: @crust;
 }
