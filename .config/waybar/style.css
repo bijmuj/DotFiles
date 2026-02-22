@@ -9,7 +9,7 @@
 
 window#waybar {
     all: unset;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .modules-left {
@@ -22,7 +22,6 @@ window#waybar {
     padding:5px;
     margin-left: 5px;
     border-radius:10px;
-    background: @crust;
     margin: 5px;
 }
 .modules-right {
@@ -75,19 +74,14 @@ button:hover {
 
 #workspaces button {
     padding: 0 5px;
-    background-color: transparent;
+    background-color: @crust;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 10px;
     min-width: 20px;
-    margin: 0px 5px;
-}
-
-#workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    margin: 0 5px;
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -96,13 +90,8 @@ button:hover {
 }
 
 #workspaces button.active {
-    color: @teal;
-    background-color: @crust
-}
-
-#mode {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    background-color: @teal;
+    color: @crust
 }
 
 #clock,
@@ -110,24 +99,16 @@ button:hover {
 #cpu,
 #memory,
 #custom-gpu,
-#disk,
-#temperature,
-#backlight,
-#network,
+#custom-power,
 #pulseaudio,
-#wireplumber,
-#custom-media,
 #tray,
-#mode,
 #idle_inhibitor,
-#scratchpad,
-#power-profiles-daemon,
-#mpd {
-    padding: 0 15px;
+#power-profiles-daemon {
+    padding: 5px 10px;
+    background-color: @crust;
 }
 
-#window,
-#workspaces {
+#window {
     margin: 0 4px;
 }
 
@@ -141,13 +122,11 @@ button:hover {
     margin-right: 0;
 }
 
-#clock {
-    background-color: @crust;
-    padding: 5px;
+#custom-power {
+    padding: 0 5px;
 }
 
 #clock.calendar {
-    background-color: @crust;
     color: @text;
 }
 
@@ -181,67 +160,19 @@ label:focus {
 
 #cpu {
     color: @blue;
-    background-color: @crust;
 }
 
 #memory {
     color: @mauve;
-    background-color: @crust;
 }
 
 #custom-gpu {
     color: @teal;
-    background-color: @crust;
-}
-
-#network {
-    background-color: @teal;
-    color: @crust
-}
-
-#network.disconnected {
-    background-color: #f53c3c;
 }
 
 #pulseaudio.muted {
     background-color: @maroon;
     color: #2a5c45;
-}
-
-#wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
-}
-
-#wireplumber.muted {
-    background-color: #f53c3c;
-}
-
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
-#temperature {
-    background-color: #f0932b;
-}
-
-#temperature.critical {
-    background-color: #eb4d4b;
-}
-
-#tray {
-    background-color: @crust;
-    padding: 3px;
 }
 
 #tray > .passive {
@@ -264,101 +195,9 @@ label:focus {
     background-color: @crust;
 }
 
-#mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
-}
-
-#mpd.disconnected {
-    background-color: #f53c3c;
-}
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
-}
-
-#language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
-}
-
-#privacy {
-    padding: 0;
-}
-
-#privacy-item {
-    padding: 0 5px;
-    color: white;
-}
-
-#privacy-item.screenshare {
-    background-color: #cf5700;
-}
-
-#privacy-item.audio-in {
-    background-color: #1ca000;
-}
-
-#privacy-item.audio-out {
-    background-color: #0069d4;
-}
-
 menu {
     border-radius: 15px;
     background-color: @base;
     color: @text;
     margin-top: 15px;
-}
-
-#backlight-slider slider {
-      min-height: 0px;
-      min-width: 0px;
-      opacity: 0;
-      background-image: none;
-      border: none;
-      box-shadow: none;
-  }
-
-#backlight-slider trough {
-    min-height: 80px;
-    min-width: 10px;
-    border-radius: 5px;
-    background-color: black;
-}
-
-#backlight-slider highlight {
-    min-width: 10px;
-    border-radius: 5px;
-    background-color: red;
 }
