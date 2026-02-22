@@ -16,19 +16,19 @@ window#waybar {
     padding:5px;
     margin-left:5px;
     border-radius:10px;
-    margin: 5px;
+    margin-top: 5px;
 }
 .modules-center {
     padding:5px;
     margin-left: 5px;
     border-radius:10px;
-    margin: 5px;
+    margin-top: 5px;
 }
 .modules-right {
     padding:5px;
     margin-left: 5px;
     border-radius:10px;  
-    margin: 5px;
+    margin-top: 5px;
 }
 
 window#waybar.hidden {
@@ -106,10 +106,6 @@ button:hover {
 #power-profiles-daemon {
     padding: 5px 10px;
     background-color: @crust;
-}
-
-#window {
-    margin: 0 4px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
