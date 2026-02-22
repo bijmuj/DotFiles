@@ -43,8 +43,6 @@ unset __conda_setup
 
 fastfetch
 . "$HOME/.cargo/env"
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64/
 
-export PATH=$PATH:~/bin:/home/bijin/.cargo/bin
-
-export __NV_PRIME_RENDER_OFFLOAD=1
+export PATH=${PATH}:/usr/local/cuda-13.0/bin:/home/bijin/.cargo/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64/:/usr/local/cuda-13.0/lib64
