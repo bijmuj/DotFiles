@@ -8,6 +8,7 @@
     // Choose the order of the modules
     "modules-left": [
         "custom/power",
+	"battery",
         "clock",
         "tray"
     ],
@@ -19,7 +20,7 @@
         "pulseaudio",
         "cpu",
         "memory",
-	"custom/gpu",
+    	"custom/gpu",
         "power-profiles-daemon"
     ],
     "backlight/slider": {
