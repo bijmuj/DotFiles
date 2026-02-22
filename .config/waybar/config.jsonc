@@ -20,6 +20,7 @@
         "pulseaudio",
         "cpu",
         "memory",
+        "custom/gpu",
         "power-profiles-daemon"
     ],
     "idle_inhibitor": {
@@ -124,6 +125,6 @@
         "exec": "~/.config/waybar/scripts/gpuinfo.sh",
         "return-type": "json",
         "format-icons": "\uf11b",
-        "on-click": "alacritty -e nvtop",
+        "on-click": "alacritty -e nvtop"
     }
 }
