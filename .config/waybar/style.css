@@ -13,21 +13,23 @@ window#waybar {
 }
 
 .modules-left {
-    padding:5px;
-    margin-left:5px;
-    border-radius:10px;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
     margin-top: 5px;
 }
+
 .modules-center {
-    padding:5px;
+    padding: 5px;
     margin-left: 5px;
-    border-radius:10px;
+    border-radius: 10px;
     margin-top: 5px;
 }
+
 .modules-right {
-    padding:5px;
+    padding: 5px;
     margin-left: 5px;
-    border-radius:10px;  
+    border-radius: 10px;
     margin-top: 5px;
 }
 
@@ -100,6 +102,7 @@ button:hover {
 #memory,
 #custom-gpu,
 #custom-power,
+#custom-notification,
 #pulseaudio,
 #tray,
 #idle_inhibitor,
@@ -109,12 +112,12 @@ button:hover {
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
     margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
     margin-right: 0;
 }
 
@@ -171,11 +174,11 @@ label:focus {
     color: #2a5c45;
 }
 
-#tray > .passive {
+#tray>.passive {
     -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
 }
@@ -189,6 +192,10 @@ label:focus {
 #idle_inhibitor.activated {
     color: @red;
     background-color: @crust;
+}
+
+#custom-notification {
+    font-family: "NotoSansMono Nerd Font";
 }
 
 menu {
