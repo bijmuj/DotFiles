@@ -10,7 +10,8 @@
         "custom/power",
         "battery",
         "clock",
-        "tray"
+        "tray",
+        "custom/media"
     ],
     "modules-center": [
         "hyprland/workspaces"
@@ -58,10 +59,12 @@
     },
     "cpu": {
         "format": "{usage}% {avg_frequency}GHz ",
-        "tooltip": false
+        "tooltip": true,
+        "on-click": "alacritty -e htop"
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+        "tooltip": true
     },
     "power-profiles-daemon": {
         "format": "{icon}",

@@ -102,6 +102,7 @@ button:hover {
 #memory,
 #custom-gpu,
 #custom-power,
+#custom-media,
 #custom-notification,
 #pulseaudio,
 #tray,
@@ -196,6 +197,10 @@ label:focus {
 
 #custom-notification {
     font-family: "NotoSansMono Nerd Font";
+}
+
+#custom-media {
+    min-width: 50px;
 }
 
 menu {
