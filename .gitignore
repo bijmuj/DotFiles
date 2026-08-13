@@ -8,6 +8,8 @@
 # hyrland
 !.config/hypr/
 !.config/hypr/*.*
+!.config/hypr/lua/
+!.config/hypr/lua/*.*
 # alacritty
 !.config/alacritty/
 !.config/alacritty/*.*
